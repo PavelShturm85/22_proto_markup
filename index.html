@@ -1,69 +1,101 @@
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <script src="https://code.jquery.com/jquery.min.js"></script>
-    <script src="bootstrap/js/bootstrap.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
-    <title>Поставщики</title>
-    <!-- Bootstrap -->
-    <link rel='stylesheet' href='bootstrap/css/bootstrap.min.css' type='text/css' media='all'>
-    <style>
-     hr {
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="https://code.jquery.com/jquery.min.js"></script>
+  <script src="bootstrap/js/bootstrap.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+  <title>Поставщики</title>
+  <!-- Bootstrap -->
+  <link rel='stylesheet' href='bootstrap/css/bootstrap.min.css' type='text/css' media='all'>
+  <style>
+    hr {
       border: none;
       background-color: red;
       color: red;
       height: 2px;
-     }
-    </style>
-  </head>
+    }
+  </style>
+</head>
 
 
 
-  <body>
-    <div class="col-sm-1"></div>
-      <div class="col-sm-10 panel panel-heading panel-primary">
-        <div class="panel panel-default">
-          <div class="panel-heading">
-            <div class="controls">
-              <strong>Регион:</strong>
-              <select>
-                <option>Выбор:</option>
-                <option>Новосибирск и область</option>
-                <option>Саратов и область</option>
-                <option>Москва и область</option>
-                <option>Самара и область</option>
-              </select>
-                <span class="pull-right"><button type="button" class="btn btn-link"><ins>Выход</ins></button></span>
-                <span class="pull-right"><button type="button" class="btn btn-link"><ins>Леонид Федорович</ins></button></span>
-           </div>
-         </div>
-         <div class="panel-body">
+<body>
+  <div class="col-sm-1"></div>
+  <div class="col-sm-10 panel panel-heading panel-primary">
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <div class="controls">
+          <strong>Регион:</strong>
+          <select>
+            <option>Выбор:</option>
+            <option>Новосибирск и область</option>
+            <option>Саратов и область</option>
+            <option>Москва и область</option>
+            <option>Самара и область</option>
+          </select>
+          <span class="pull-right">
+            <button type="button" class="btn btn-link">
+              <ins>Выход</ins>
+            </button>
+          </span>
+          <span class="pull-right">
+            <button type="button" class="btn btn-link" onclick="window.location.href='profile.html'">
+              <ins>Леонид Федорович</ins>
+            </button>
+          </span>
+        </div>
+      </div>
+      <div class="panel-body">
 
-           <div class="col-sm-1"></div>
-           <div class="col-sm-10">
-             <span class="">Участники в Новосибирске:</span>
-             <span class=""><button type="button" class="btn btn-link"><ins>150 оптовых компаний</ins></button></span>
-             <span class=""><button type="button" class="btn btn-link"><ins>25 производителей</ins></button></span>
+        <div class="col-sm-1"></div>
+        <div class="col-sm-10">
+          <span class="">Участники в Новосибирске:</span>
+          <span class="">
+            <button type="button" class="btn btn-link">
+              <ins>150 оптовых компаний</ins>
+            </button>
+          </span>
+          <span class="">
+            <button type="button" class="btn btn-link">
+              <ins>25 производителей</ins>
+            </button>
+          </span>
+        </div>
+        <div class="col-sm-1"></div>
+
+        <div class="col-sm-12 text-center">
+          <h3>ВАМ ПОЗВОНЯТ ЛУЧШИЕ</br> ПОСТАВЩИКИ НОВОСИБИРСКА</h3>
+        </div>
+
+        <div class="col-sm-3"></div>
+        <form class="col-sm-6 text-center well">
+
+          <div class="text-left">
+            <strong>Я ищу</strong>
           </div>
           <div class="col-sm-1"></div>
+          <div class="col-sm-11">
+            <span class="pull-left">
+              <input type="checkbox">ЖБИ
+              <small>(фундаментальные блоки ФБС, плиты перекрытий ПК, перемычки)</small>
+            </span>
+          </div>
+          <div class="col-sm-1"></div>
+          <div class="col-sm-11">
+            <span class="pull-left">
+              <input type="checkbox"> Кирпич/Газобетон/Брус</span>
+          </div>
+          <div class="col-sm-1"></div>
+          <div class="col-sm-11">
+            <span class="pull-left">
+              <input type="checkbox"> Бетон/Раствор</span>
+          </div>
 
-          <div class="col-sm-12 text-center"><h3>ВАМ ПОЗВОНЯТ ЛУЧШИЕ</br> ПОСТАВЩИКИ НОВОСИБИРСКА</h3></div>
-
-          <div class="col-sm-3"></div>
-          <form class="col-sm-6 text-center well">
-
-            <div class="text-left"><strong>Я ищу</strong></div>
-            <div class="col-sm-1"></div>
-            <div class="col-sm-11"><span class="pull-left"><input type="checkbox">ЖБИ<small>(фундаментальные блоки ФБС, плиты перекрытий ПК, перемычки)</small></span></div>
-            <div class="col-sm-1"></div>
-            <div class="col-sm-11"><span class="pull-left"><input type="checkbox"> Кирпич/Газобетон/Брус</span></div>
-            <div class="col-sm-1"></div>
-            <div class="col-sm-11"><span class="pull-left"><input type="checkbox"> Бетон/Раствор</span></div>
-
-            <div class="col-sm-1"></div>
-            <div class="controls col-sm-11">
-              <span class="pull-left">
+          <div class="col-sm-1"></div>
+          <div class="controls col-sm-11">
+            <span class="pull-left">
               <select>
                 <option>Выбор региона:</option>
                 <option>Новосибирске и области</option>
@@ -71,39 +103,47 @@
                 <option>Москве и области</option>
                 <option>Самаре и области</option>
               </select>
-              </span>
-            </div>
+            </span>
+          </div>
 
 
-            <div class="form-group col-sm-12 text-left"></br>
-              <span class="pull-left"><strong>Описание*</strong></span>
+          <div class="form-group col-sm-12 text-left">
+            </br>
+            <span class="pull-left">
+              <strong>Описание*</strong>
+            </span>
+            <input type="text" class="form-control" placeholder="">
+            <span class="help-block pull-left">
+              <small>Пример: нужно фбс 24.4.6 50шт плиты пк 20</small>
+            </span>
+          </div>
+
+          <div class="form-group text-left">
+            <label class="col-sm-2 control-label">Телефон*</label>
+            <div class="col-sm-4">
               <input type="text" class="form-control" placeholder="">
-              <span class="help-block pull-left"><small>Пример: нужно фбс 24.4.6 50шт плиты пк 20</small></span>
             </div>
+          </div>
 
-            <div class="form-group text-left">
-              <label class="col-sm-2 control-label">Телефон*</label>
-              <div class="col-sm-4">
-                <input type="text" class="form-control" placeholder="">
-              </div>
+          <div class="form-group text-left">
+            <label class="col-sm-1 control-label">Имя</label>
+            <div class="col-sm-5">
+              <input type="text" class="form-control" placeholder="">
             </div>
-
-            <div class="form-group text-left">
-              <label class="col-sm-1 control-label">Имя</label>
-              <div class="col-sm-5">
-                <input type="text" class="form-control" placeholder="">
-              </div>
-            </div>
+          </div>
 
 
-            <div class="col-sm-3"></div>
-            <div class="col-sm-6"></br>
-              <button type="submit" class="btn">ОПУБЛИКОВАТЬ ЗАЯВКУ</button>
-            </div>
-            <div class="col-sm-3"></div>
-          </form>
+          <div class="col-sm-3"></div>
+          <div class="col-sm-6">
+            </br>
+            <button type="submit" class="btn">ОПУБЛИКОВАТЬ ЗАЯВКУ</button>
+          </div>
+          <div class="col-sm-3"></div>
+        </form>
 
-          <div class="col-sm-12 text-center"><h3>Свежие заявки</h3></div>
+        <div class="col-sm-12 text-center">
+          <h3>Свежие заявки</h3>
+        </div>
 
         <div class="col-sm-3">
           <div class="controls">
@@ -111,70 +151,108 @@
             <select>
               <option>Все:</option>
             </select>
-         </div>
-       </div>
-       <div class="col-sm-6"></div>
-
-       <div class="col-sm-3">
-         <div class="controls">
-           <strong>Регион:</strong>
-           <select>
-             <option>Выбор:</option>
-             <option>Новосибирск и область</option>
-           </select>
+          </div>
         </div>
-      </div>
+        <div class="col-sm-6"></div>
 
-    <div class="col-sm-12"><hr></div>
-    <div class="col-sm-2"><small>вчера в 21:30</small></div>
-    <div class="col-sm-8"></div>
-    <div class="col-sm-2 btn btn-link"><span class="glyphicon glyphicon-star"></span><ins>в закладки</ins></div>
-    <div class="col-sm-12">60 шт. ПК от 72-15 до ПК 21-15, Криводановка, с доставкой.</div>
-    <div class="col-sm-12">Алексей</div>
-    <div class="col-sm-12"></br>
-      <button type="submit" class="btn">Показать телефон</button>
-      <span>12 просмотров</span>
-    </div>
+        <div class="col-sm-3">
+          <div class="controls">
+            <strong>Регион:</strong>
+            <select>
+              <option>Выбор:</option>
+              <option>Новосибирск и область</option>
+            </select>
+          </div>
+        </div>
 
-    <div class="col-sm-12"><hr></div>
-    <div class="col-sm-2"><small>вчера в 21:30</small></div>
-    <div class="col-sm-8"></div>
-    <div class="col-sm-2 btn btn-link"><span class="glyphicon glyphicon-star"></span><ins>в закладки</ins></div>
-    <div class="col-sm-12">60 шт. ПК от 72-15 до ПК 21-15, Криводановка, с доставкой.</div>
-    <div class="col-sm-12">Алексей</div>
-    <div class="col-sm-12"></br>
-        <button type="submit" class="btn">Показать телефон</button>
-        <span>12 просмотров</span>
-    </div>
+        <div class="col-sm-12">
+          <hr>
+        </div>
+        <div class="col-sm-2">
+          <small>вчера в 21:30</small>
+        </div>
+        <div class="col-sm-8"></div>
+        <div class="col-sm-2 btn btn-link">
+          <span class="glyphicon glyphicon-star"></span>
+          <ins>в закладки</ins>
+        </div>
+        <div class="col-sm-12">60 шт. ПК от 72-15 до ПК 21-15, Криводановка, с доставкой.</div>
+        <div class="col-sm-12">Алексей</div>
+        <div class="col-sm-12">
+          </br>
+          <button type="submit" class="btn">Показать телефон</button>
+          <span>12 просмотров</span>
+        </div>
 
-    <div class="col-sm-12"><hr></div>
-    <div class="col-sm-2"><small>вчера в 21:30</small></div>
-    <div class="col-sm-8"></div>
-    <div class="col-sm-2 btn btn-link"><span class="glyphicon glyphicon-star"></span><ins>в закладки</ins></div>
-    <div class="col-sm-12">60 шт. ПК от 72-15 до ПК 21-15, Криводановка, с доставкой.</div>
-    <div class="col-sm-12">Алексей</div>
-    <div class="col-sm-12"></br>
-      <button type="submit" class="btn">Показать телефон</button>
-      <span>12 просмотров</span>
-    </div>
+        <div class="col-sm-12">
+          <hr>
+        </div>
+        <div class="col-sm-2">
+          <small>вчера в 21:30</small>
+        </div>
+        <div class="col-sm-8"></div>
+        <div class="col-sm-2 btn btn-link">
+          <span class="glyphicon glyphicon-star"></span>
+          <ins>в закладки</ins>
+        </div>
+        <div class="col-sm-12">60 шт. ПК от 72-15 до ПК 21-15, Криводановка, с доставкой.</div>
+        <div class="col-sm-12">Алексей</div>
+        <div class="col-sm-12">
+          </br>
+          <button type="submit" class="btn">Показать телефон</button>
+          <span>12 просмотров</span>
+        </div>
 
-    <div class="col-sm-12"><hr></div>
+        <div class="col-sm-12">
+          <hr>
+        </div>
+        <div class="col-sm-2">
+          <small>вчера в 21:30</small>
+        </div>
+        <div class="col-sm-8"></div>
+        <div class="col-sm-2 btn btn-link">
+          <span class="glyphicon glyphicon-star"></span>
+          <ins>в закладки</ins>
+        </div>
+        <div class="col-sm-12">60 шт. ПК от 72-15 до ПК 21-15, Криводановка, с доставкой.</div>
+        <div class="col-sm-12">Алексей</div>
+        <div class="col-sm-12">
+          </br>
+          <button type="submit" class="btn">Показать телефон</button>
+          <span>12 просмотров</span>
+        </div>
 
-    <div class="col-sm-4 btn btn-link"><div class="col-sm-12"><span class="glyphicon glyphicon-chevron-left pull-right"></span></div></div>
-    <form class="col-sm-4 text-center well">
-      <div class="col-sm-1"><span class="glyphicon glyphicon-user"></span></div>
-        Кирилл, 29 лет, г. Барабинск</br>
-        Бла-бла, мне помогло, все супер!</br>
-        Бла-бла, мне помогло, все супер!</br>
-    </form>
-    <div class="col-sm-4 btn btn-link"><div class="col-sm-12"><span class="glyphicon glyphicon-chevron-right pull-left"></span></div></div>
+        <div class="col-sm-12">
+          <hr>
+        </div>
 
-          <div class="col-sm-3"></div>
+        <div class="col-sm-4 btn btn-link">
+          <div class="col-sm-12">
+            <span class="glyphicon glyphicon-chevron-left pull-right"></span>
+          </div>
+        </div>
+        <form class="col-sm-4 text-center well">
+          <div class="col-sm-1">
+            <span class="glyphicon glyphicon-user"></span>
+          </div>
+          Кирилл, 29 лет, г. Барабинск</br>
+          Бла-бла, мне помогло, все супер!</br>
+          Бла-бла, мне помогло, все супер!</br>
+        </form>
+        <div class="col-sm-4 btn btn-link">
+          <div class="col-sm-12">
+            <span class="glyphicon glyphicon-chevron-right pull-left"></span>
+          </div>
+        </div>
+
+        <div class="col-sm-3"></div>
       </div>
     </div>
 
     <form class="col-sm-12 text-center well">
-      <div class="col-sm-12 text-center"><h3>Вы поставщик?</h3></div>
+      <div class="col-sm-12 text-center">
+        <h3>Вы поставщик?</h3>
+      </div>
       <div class="col-sm-12"></div>
 
       <div class="col-sm-6 text-left">Для доступа к телефонам покупателей, заполните форму</br> или позвоните нам +7 999 888 77-66</div>
@@ -182,7 +260,8 @@
         <div class="form-group text-left">
           <label class="col-sm-3 control-label">Организация</label>
           <div class="col-sm-9">
-            <input type="text" class="form-control" placeholder=""></br>
+            <input type="text" class="form-control" placeholder="">
+            </br>
           </div>
         </div>
       </div>
@@ -192,7 +271,8 @@
         <div class="form-group text-left">
           <label class="col-sm-3 control-label">Телефон</label>
           <div class="col-sm-9">
-            <input type="text" class="form-control" placeholder=""></br>
+            <input type="text" class="form-control" placeholder="">
+            </br>
           </div>
         </div>
       </div>
@@ -202,7 +282,8 @@
         <div class="form-group text-left">
           <label class="col-sm-3 control-label">Email</label>
           <div class="col-sm-9">
-            <input type="text" class="form-control" placeholder=""></br>
+            <input type="text" class="form-control" placeholder="">
+            </br>
           </div>
         </div>
       </div>
@@ -212,23 +293,26 @@
         <div class="form-group text-left">
           <label class="col-sm-3 control-label">Имя</label>
           <div class="col-sm-9">
-            <input type="text" class="form-control" placeholder=""></br>
+            <input type="text" class="form-control" placeholder="">
+            </br>
           </div>
         </div>
       </div>
 
       <div class="col-sm-6"></div>
-      <div class="col-sm-6"></br>
-        <button type="submit" class="btn pull-left">Отправить информацию</button>
+      <div class="col-sm-6">
+        </br>
+        <button type="button" class="btn pull-left" onclick="window.location.href='zajavki.html'">Отправить информацию</button>
       </div>
 
 
     </form>
 
+  </div>
 
 
 
 
+</body>
 
-  </body>
 </html>
